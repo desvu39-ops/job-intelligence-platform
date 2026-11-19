@@ -1,0 +1,95 @@
+
+# =====================================
+# Job Intelligence Platform
+# Git Ignore Configuration
+# =====================================
+
+
+# 1. Frontend - Node.js
+# =====================================
+
+node_modules/
+frontend/dist/
+frontend/.umi/
+frontend/.umi-production/
+
+
+# 2. Python
+# =====================================
+
+# Python virtual environments
+backend/.venv/
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Testing and cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+
+# 3. Environment variables and secrets
+# =====================================
+
+.env
+.env.*
+!.env.example
+
+# Private keys
+*.pem
+*.key
+secrets/
+
+
+# 4. Private data files
+# =====================================
+
+# Raw recruitment data
+data/raw/
+
+# Private data
+data/private/
+
+# Excel and CSV files
+*.xlsx
+*.xls
+*.csv
+
+# Allow sanitized sample files
+!data/sample/*.xlsx
+!data/sample/*.csv
+
+
+# 5. Database files
+# =====================================
+
+*.db
+*.sqlite
+*.sqlite3
+
+
+# 6. Logs
+# =====================================
+
+*.log
+
+
+# 7. IDE configuration
+# =====================================
+
+.idea/
+.vscode/
+
+
+# 8. Operating system files
+# =====================================
+
+.DS_Store
+Thumbs.db
+Desktop.ini
